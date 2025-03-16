@@ -1,0 +1,47 @@
+:root {
+
+    /** general colors **/
+    --main-background-color: #ffffff;
+    --alternate-background-color: #F6F6F6;
+    --main-text-color-dark: #0F1113;
+    --main-text-color-light: #666;
+
+    --accent-color-dark: #7A1212;
+    --accent-color-light: #D47171;  /** #FAC02E more orange **/
+
+    /** home (above menu bar) **/
+    --home-text-color: #ffffff;
+    --home-loading-background-color: var(--main-text-color-dark);
+
+    /** menu, footer **/
+    --menu-background-color: var(--main-text-color-dark);
+    --menu-text-color: #999;
+    --menu-link-color: #ffffff;
+    --menu-link-hover-color: var(--accent-color-light);
+
+    /** content **/
+    --line-color: #ddd;
+    --divider-color: #ccc;
+    --about-picture-frame-color: var(--alternate-background-color);
+    --label-text-color: var(--menu-text-color);
+    --label-background-color: #eee;
+
+    /** portfolio **/
+    --portfolio-background-color: var(--main-background-color);
+    --portfolio-text-color: var(--main-text-color-light);
+    --portfolio-caption-color: var(--main-text-color-dark);
+    --portfolio-icon-background-color: var(--main-background-color);
+    --portfolio-icon-hover-color: var(--accent-color-light);
+
+    /** quick-blog items **/
+    --quick-blog-background-color: var(--main-background-color);
+    --quick-blog-shadow-color: var(--line-color);
+    --quick-blog-button-border-color: #ccc;
+    --plusnav-text-color: #ffffff;
+    --plusnav-border-color: #ffffff;
+    --plusnav-shadow-color: var(--line-color);
+
+    /** polaroids **/
+    --polaroid-background-color: var(--main-background-color);
+    --polaroid-text-color: var(--main-text-color-dark);
+}

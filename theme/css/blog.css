@@ -1,0 +1,159 @@
+#blog {
+  text-align:left;
+  border:0;
+  margin:0;
+}
+#blog h1 {
+  background:none;
+  font-size:45px;
+  line-height:30px;
+  margin:0;
+  padding:0;
+  font-weight: 300;
+  text-transform:none;
+}
+#blog h1.upper {
+  text-transform:uppercase;
+}
+#blog div.left {
+  padding-right:50px;
+}
+#blog .item {
+  display:block;
+  margin-bottom:60px;
+  padding-bottom:0px;
+}
+#blog .item-title {
+  margin-bottom:30px;
+  display:block;
+}
+#blog .item-title .label {
+  font-size:10px;
+  text-transform:uppercase;
+  font-weight: 400;
+}
+#blog .item h2 {
+  margin:0;
+}
+#blog form input[type="text"], #blog form input[type="password"], #blog form input[type="email"], #blog form input[type="phone"], #blog form textarea {
+  width:100%;
+}
+#blog .widget small {
+  color: var(--main-text-color-light);
+  display:block;
+  font-size:11px;
+}
+#blog .widget {
+  margin-bottom:70px;
+}
+#blog .widget h3 {
+  margin-bottom:20px;
+}
+#blog .widget ul {
+  list-style:none;
+  margin:0;
+  padding:0 0 0 20px;
+}
+#blog .widget ul li a i {
+  padding-right:8px;
+}
+#blog .widget ul li {
+  margin:10px 0;
+}
+#blog .widget ul li i {
+  padding-right:8px;
+}
+#blog .btn {
+  margin:0;
+}
+
+#blog_main_area ul,
+.quick-item ul  {
+    padding: 0 0 0 20px;
+}
+#blog_main_area ul li, .quick-item ul li {
+  list-style-type: square;
+  margin: 5px;
+}
+
+#quick-blog .quick-item .btn, #blog .item .btn, #blog .item .btn:hover {
+  border: --quick-blog-button-border-color 1px solid !important;
+}
+/* onepage home */
+ #quick-blog div.quick-hover {
+  -webkit-transition: all 300ms !important;
+  -moz-transition: all 300ms !important;
+  -o-transition: all 300ms !important;
+  transition: all 300ms !important;
+}
+#quick-blog .quick-item {
+  background: var(--quick-blog-background-color);
+  padding:20px;
+  margin:15px 0;
+}
+#quick-blog .quick-item:hover {
+  box-shadow: var(--quick-blog-shadow-color) 0 0 15px;
+}
+#quick-blog .media-preview {
+  display:block;
+  margin:-20px -20px 20px -20px;
+  height:200px;
+  overflow:hidden;
+}
+#quick-blog .quick-item .btn {
+  margin-top:0;
+}
+.fsize13 {
+  font-size: 13px !important;
+  line-height: 20px !important;
+}
+.fsize16 {
+  font-size: 16px !important;
+  line-height: 20px !important;
+}
+.socials {
+  float: right;
+  margin-top: -20px;
+}
+.container a.label, span.label {
+  font-weight: 400;
+}
+/** Responsive
+ **************************************************************** **/
+ @media only screen and (max-width: 768px) {
+  #blog .left {
+    display:block;
+    padding-right:16px !important;
+    margin-bottom:100px;
+  }
+}
+
+
+/** This is the color that article links show up as **/
+.styleColor,
+ul.bstrap-tabs li.active a,
+ul.bstrap-tabs li.active a i,
+#portfolio div.item a:hover i.fa,
+section.util-row h1,
+.pagination>li>a,
+.pagination>li>span,
+.pagination>li>a:hover,
+a {
+  color: var(--accent-color-dark);
+}
+
+/** This is the color that theme links show up as **/
+.theme_link {
+  color: var(--accent-color-dark);
+}
+
+a:hover {
+  color: var(--accent-color-light);
+}
+.plusNav {
+  background: var(--accent-color-dark);
+}
+.plusNav:hover {
+  color: var(--menu-link.color);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px var(--accent-color-light), 0 0 0 10px rgba(255, 255, 255, 0.5);
+}

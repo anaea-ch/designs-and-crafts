@@ -40,6 +40,8 @@
         <link href="https://designs-and-crafts.anaea.ch/theme/css/layout.css" rel="stylesheet" type="text/css" />
         <link href="https://designs-and-crafts.anaea.ch/theme/css/blog.css" rel="stylesheet" type="text/css" />
 
+            <!-- magnific-popup for gallery-lightbox -->
+            <link rel="stylesheet" href="https://designs-and-crafts.anaea.ch/theme/css/magnific-popup.css">
 
         <!-- ICONS -->
             <link rel="shortcut icon" href="/images/logo/logo_only_white.png" type="image/x-icon" />
@@ -99,16 +101,137 @@
 
                 <div class="row">
                     <div class="left">
-    
 
     <header class="text-left">
-        <h1>Not Found</h1>
+        <h1 class="upper">produkte</h1>
+
+
     </header>
 
-    <div class="page-content">
-        <p>Ups, da ist wohl etwas schiefgelaufen...</p>
-<p>Vielleicht wirst du im <a href="/archives.html">Archiv</a> fündig? </p>
-    </div>
+
+        <!-- include content of page with same slug as category -->
+            <p>Jedes Geschenk wird besonders, wenn es eine persönliche Note trägt. 
+In meiner Galerie findest du eine Auswahl an Projekten, die ich bereits realisiert habe.</p>
+<p>Hast du eine eigene Idee? 
+Egal, ob du schon ein fertiges Design hast oder noch nach Inspiration suchst – ich helfe dir, deine Vision umzusetzen. 
+Du kannst entweder ein passendes Produkt über mich beziehen oder mir dein eigenes Rohling-Material zur Veredelung anvertrauen. </p>
+<p>Schau dich in Ruhe um, lass dich inspirieren! </p>
+<p>Und wenn du Lust hast, dein eigenes Projekt mit mir zu besprechen, nimm gerne Kontakt auf!
+Diverse Kontaktmöglichkeiten findest du unten in der Fussleiste.</p>
+
+        <br/>
+
+        <!-- display all category-articles as polaroids -->
+        <div id="polaroids" class="text-left">
+            <ul class="polaroids">
+                    <li class="">
+                        <a title="Flaschenöffner">   <!-- TODO: add actual link href="https://designs-and-crafts.anaea.ch/posts/2025/03/16/flaschenoffner/" -->
+
+                                <!-- first image of first gallery -->
+                                <img src="https://designs-and-crafts.anaea.ch/photos/products/bottle-opener/bottle-opener.jpg" class="img-responsive" alt="Flaschenöffner (img)" width="100%" height="100%" />
+                        </a>
+                    </li>
+                    <li class="">
+                        <a title="Gedenkmünze">   <!-- TODO: add actual link href="https://designs-and-crafts.anaea.ch/posts/2025/03/16/gedenkmunze/" -->
+
+                                <!-- first image of first gallery -->
+                                <img src="https://designs-and-crafts.anaea.ch/photos/products/challenge-coin/challenge-coin.jpg" class="img-responsive" alt="Gedenkmünze (img)" width="100%" height="100%" />
+                        </a>
+                    </li>
+                    <li class="">
+                        <a title="Schlüsselanhänger (Holz)">   <!-- TODO: add actual link href="https://designs-and-crafts.anaea.ch/posts/2025/03/16/schlusselanhanger-holz/" -->
+
+                                <!-- first image of first gallery -->
+                                <img src="https://designs-and-crafts.anaea.ch/photos/products/wooden-keychain/wooden-keychain.jpg" class="img-responsive" alt="Schlüsselanhänger (Holz) (img)" width="100%" height="100%" />
+                        </a>
+                    </li>
+                    <li class="">
+                        <a title="Schlüsselanhänger (Metall)">   <!-- TODO: add actual link href="https://designs-and-crafts.anaea.ch/posts/2025/03/16/schlusselanhanger-metall/" -->
+
+                                <!-- first image of first gallery -->
+                                <img src="https://designs-and-crafts.anaea.ch/photos/products/metal-keychain/metal-keychain.jpg" class="img-responsive" alt="Schlüsselanhänger (Metall) (img)" width="100%" height="100%" />
+                        </a>
+                    </li>
+                    <li class="">
+                        <a title="Weinbecher">   <!-- TODO: add actual link href="https://designs-and-crafts.anaea.ch/posts/2025/03/16/weinbecher/" -->
+
+                                <!-- first image of first gallery -->
+                                <img src="https://designs-and-crafts.anaea.ch/photos/products/wine-tumbler/wine-tumbler.jpg" class="img-responsive" alt="Weinbecher (img)" width="100%" height="100%" />
+                        </a>
+                    </li>
+            </ul>
+        </div>
+
+        <br />
+
+        <div class="text-center">
+            <h2>Es folgen in Kürze</h2>
+            <br />
+            <ul>
+                <li>Weitere Projektbeispiele</li>
+                <li>Verlinkung zu detaillierteren Beschreibungen</li>
+            </ul>
+        </div>
+
+        <!-- show category-tags as tag cloud
+        <div class="tagcloud">
+                    <ul class="tagcloud">
+                            <li class="tag-4">
+                                <a href="https://designs-and-crafts.anaea.ch/tag/eisen-beschichtet.html">
+                                    Eisen (beschichtet)
+                                </a>
+                            </li>
+                            <li class="tag-1">
+                                <a href="https://designs-and-crafts.anaea.ch/tag/gravur.html">
+                                    Gravur
+                                </a>
+                            </li>
+                            <li class="tag-4">
+                                <a href="https://designs-and-crafts.anaea.ch/tag/becher.html">
+                                    Becher
+                                </a>
+                            </li>
+                            <li class="tag-4">
+                                <a href="https://designs-and-crafts.anaea.ch/tag/edelstahl.html">
+                                    Edelstahl
+                                </a>
+                            </li>
+                            <li class="tag-4">
+                                <a href="https://designs-and-crafts.anaea.ch/tag/edelstahl-beschichtet.html">
+                                    Edelstahl (beschichtet)
+                                </a>
+                            </li>
+                            <li class="tag-4">
+                                <a href="https://designs-and-crafts.anaea.ch/tag/holz.html">
+                                    Holz
+                                </a>
+                            </li>
+                            <li class="tag-4">
+                                <a href="https://designs-and-crafts.anaea.ch/tag/flaschenoffner.html">
+                                    Flaschenöffner
+                                </a>
+                            </li>
+                            <li class="tag-2">
+                                <a href="https://designs-and-crafts.anaea.ch/tag/schlusselanhanger.html">
+                                    Schlüsselanhänger
+                                </a>
+                            </li>
+                            <li class="tag-4">
+                                <a href="https://designs-and-crafts.anaea.ch/tag/gedenkmunze.html">
+                                    Gedenkmünze
+                                </a>
+                            </li>
+                            <li class="tag-4">
+                                <a href="https://designs-and-crafts.anaea.ch/tag/aluminium-beschichtet.html">
+                                    Aluminium (beschichtet)
+                                </a>
+                            </li>
+                    </ul>
+        </div>
+        -->
+
+        <!-- NO pagination -->
+
 
                     </div>
                 </div>
@@ -182,6 +305,32 @@
 
 
 
+    <!-- magnific-popup for gallery-lightbox -->
+
+    <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- Magnific Popup core JS file -->
+    <script src="https://designs-and-crafts.anaea.ch/theme/js/jquery.magnific-popup.min.js"></script>
+    <script>
+    $('.gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [1,2]
+        },
+        image: {
+            titleSrc: function(item) {
+                if (item.el.attr('caption') && item.el.attr('exif')) {
+                    return (item.el.attr('caption').replace(/\\n/g, '<br />') +
+                        '<small>' + item.el.attr('title') + ' - ' + item.el.attr('exif') + '</small>');
+                }
+            return item.el.attr('title') + '<small>' + item.el.attr('exif') + '</small>';
+        } }
+    });
+    </script>
 
     </body>
 

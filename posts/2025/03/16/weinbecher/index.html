@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="de">
 
@@ -40,6 +41,8 @@
         <link href="https://designs-and-crafts.anaea.ch/theme/css/layout.css" rel="stylesheet" type="text/css" />
         <link href="https://designs-and-crafts.anaea.ch/theme/css/blog.css" rel="stylesheet" type="text/css" />
 
+            <!-- magnific-popup for gallery-lightbox -->
+            <link rel="stylesheet" href="https://designs-and-crafts.anaea.ch/theme/css/magnific-popup.css">
 
         <!-- ICONS -->
             <link rel="shortcut icon" href="/images/logo/logo_only_white.png" type="image/x-icon" />
@@ -94,21 +97,72 @@
         </div>
     </nav>
 </header>
-        <section>
+        <section id="blog"><!-- without id = blog, h1 is automatically uppercase-d -->
             <article class="container">
 
                 <div class="row">
-                    <div class="left">
+                    <div id="blog_main_area" class="left"><!-- id allows for visible list items compared to page_base.html -->
+
     
 
-    <header class="text-left">
-        <h1>Not Found</h1>
+    <!-- article title -->
+    <header>
+            <h1>Weinbecher</h1>
+        <small class="fsize13">
+
+                      <a href="https://designs-and-crafts.anaea.ch/category/produkte.html" rel="tag tooltip" class="label label-default light" data-placement="right" data-original-title="5 articles in this category"><i class="fa fa-dot-circle-o"></i> produkte</a>
+
+
+            <span class="label label-default light">Sunday, 16.03.2025</span>
+        </small>
     </header>
 
-    <div class="page-content">
-        <p>Ups, da ist wohl etwas schiefgelaufen...</p>
-<p>Vielleicht wirst du im <a href="/archives.html">Archiv</a> fündig? </p>
+    <article class='content'>
+
+
+            <div class="gallery">
+                    <h1></h1>
+                        <a href="https://designs-and-crafts.anaea.ch/photos/products/wine-tumbler/wine-tumbler.jpg" title="wine-tumbler.jpg" exif="" caption=""><img src="https://designs-and-crafts.anaea.ch/photos/products/wine-tumbler/wine-tumblert.jpg" alt="wine-tumbler.jpg (img)"></a>
+            </div>
+
+        
+    </article>
+
+    <!--
+    <div class="divider"></div>
+    -->
+
+    <!-- SOCIAL -->
+
+    <!-- TAGS -->
+        <p class="fsize16"> Tags:
+
+                    <a href="/tag/gravur.html" rel="tooltip" class="label label-default light" data-placement="right" data-original-title="5 articles with this tag"><i class="fa fa-tags"></i> Gravur</a>
+
+                    <a href="/tag/becher.html" rel="tooltip" class="label label-default light" data-placement="right" data-original-title="1 article with this tag"><i class="fa fa-tags"></i> Becher</a>
+
+                    <a href="/tag/edelstahl-beschichtet.html" rel="tooltip" class="label label-default light" data-placement="right" data-original-title="1 article with this tag"><i class="fa fa-tags"></i> Edelstahl (beschichtet)</a>
+
+        </p>
+
+    <div class="clear">
+        <hr/>
     </div>
+
+    <div class="pages">
+
+
+
+
+        <div class="col-md-6 text-left">
+                <ul class="pagination">
+                    <li class="prev"><a href="https://designs-and-crafts.anaea.ch/posts/2025/03/16/schlusselanhanger-metall/">&lang; Schlüsselanhänger (Metall)</a></li>
+                </ul>
+        </div>
+        <div class="col-md-6 text-right">
+        </div>
+    </div>
+
 
                     </div>
                 </div>
@@ -182,6 +236,32 @@
 
 
 
+    <!-- magnific-popup for gallery-lightbox -->
+
+    <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- Magnific Popup core JS file -->
+    <script src="https://designs-and-crafts.anaea.ch/theme/js/jquery.magnific-popup.min.js"></script>
+    <script>
+    $('.gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [1,2]
+        },
+        image: {
+            titleSrc: function(item) {
+                if (item.el.attr('caption') && item.el.attr('exif')) {
+                    return (item.el.attr('caption').replace(/\\n/g, '<br />') +
+                        '<small>' + item.el.attr('title') + ' - ' + item.el.attr('exif') + '</small>');
+                }
+            return item.el.attr('title') + '<small>' + item.el.attr('exif') + '</small>';
+        } }
+    });
+    </script>
 
     </body>
 
