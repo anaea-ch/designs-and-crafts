@@ -287,10 +287,14 @@ section.alternate.arrow-down {
 .clear {
     clear:both;
 }
-.prev_page {
-
+.pages span {
+    display:block;
+    text-align:center
 }
-.next_page {
+.pages .prev_page {
+    float: left;
+}
+.pages .next_page {
     float:right;
 }
 
