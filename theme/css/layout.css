@@ -522,32 +522,35 @@ footer a.toTop:hover {
 
 /** Polaroids
  **************************************************************** **/
+#polaroids {
+    padding: 20px;
+}
 ul.polaroids {
-    width: 100%;
-    margin: 0 0 0px 0px;
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    max-width: 100%;
 }
 ul.polaroids li {
-    display: inline;
+    list-style: none;
 }
 ul.polaroids a {
     background: var(--polaroid-background-color);
-    display: inline;
-    float: left;
-    margin: 0 0 20px 20px;
-    width: auto;
     padding: 10px 10px 15px;
     text-align: center;
-    font-family: "Indie Flower",
-    sans-serif;
+    font-family: "Indie Flower", sans-serif;
     text-decoration: none;
     color: var(--polaroid-text-color);
-    font-size: 18px;
-    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-    -webkit-transform: rotate(-2deg);
-    -webkit-transition: -webkit-transform .15s linear;
-    -moz-transform: rotate(-2deg);
+    font-size: 16px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    transform: rotate(-2deg);
+    transition: transform .15s linear;
+    display: block;
+    width: 210px; /* match image + padding */
 }
 ul.polaroids img {
     display: block;
